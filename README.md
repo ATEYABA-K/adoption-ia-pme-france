@@ -4,7 +4,7 @@ Analyse de l'adoption de l'intelligence artificielle par les entreprises en Fran
 
 ## Contexte
 
-Ce projet simule le type d'analyse qu'un·e Chargé·e de Projet Digital/Data/IA pourrait produire pour justifier ou orienter une stratégie IA différenciée selon la taille des clients B2B — un exercice personnel pour mettre en pratique la chaîne complète : sourcing de données publiques, nettoyage Python, calcul d'indicateurs, dashboard.
+Ce projet simule le type d'analyse qu'un Chargé de Projet Data pourrait produire pour justifier ou orienter une stratégie IA différenciée selon la taille des clients B2B — un exercice personnel pour mettre en pratique la chaîne complète : sourcing de données publiques, nettoyage Python, calcul d'indicateurs, dashboard.
 
 ## Résultats clés
 
