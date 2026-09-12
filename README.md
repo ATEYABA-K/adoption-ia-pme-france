@@ -2,7 +2,9 @@
 
 Je voulais vérifier un truc : est-ce que les PME rattrapent leur retard sur l'IA, ou est-ce que ça s'aggrave. Les chiffres officiels de l'Insee répondent clairement, et pas dans le sens où je m'y attendais.
 
-![Adoption de l'IA par taille d'entreprise en 2025](chart_ia_par_taille_2025.png)
+![Dashboard Looker Studio](dashboard_looker_studio.png)
+
+*[Voir le dashboard interactif](https://datastudio.google.com/reporting/80b607fa-71f1-461c-b5ae-30e91c213f86)*
 
 En 2025, 58 % des entreprises de 250 salariés et plus utilisent une techno d'IA, contre 15 % pour les 10-49 salariés. L'écart n'est pas nouveau, mais ce qui frappe c'est sa trajectoire :
 
@@ -14,8 +16,6 @@ En 2025, 58 % des entreprises de 250 salariés et plus utilisent une techno d'IA
 | **Écart (250+ vs 10-49)** | 16 pts | 24 pts | **43 pts** |
 
 L'écart a presque triplé en deux ans. Tout le monde adopte l'IA plus vite qu'avant, mais les grandes boîtes accélèrent plus fort — donc l'écart se creuse au lieu de se refermer. Une PME en 2025 est à peu près là où était une grande entreprise fin 2022. Le retard ne se rattrape pas tout seul avec le temps.
-
-![Évolution de l'adoption de l'IA par taille d'entreprise, 2023-2025](chart_evolution_ia_2023_2025.png)
 
 ## D'où viennent les chiffres
 
