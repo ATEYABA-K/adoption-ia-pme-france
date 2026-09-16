@@ -24,14 +24,10 @@ L'écart a presque triplé en deux ans. Tout le monde adopte l'IA plus vite qu'a
 ## Reproduire
 
 ```bash
-pip install pandas openpyxl matplotlib
-python3 -c "
-import pandas as pd
-df = pd.read_excel('data/IP2120.xlsx', sheet_name='Figure 1', skiprows=3)
-print(df.head(20))
-"
+pip install -r requirements.txt
+python3 scripts/clean_data.py
 ```
-Le nettoyage complet (séparation taille/secteur, passage en format tidy) est décrit pas à pas dans l'historique de commits — le fichier propre final est `data/insee_ia_pour_powerbi.csv`, prêt pour n'importe quel outil BI.
+Le script sépare les deux blocs du fichier source (taille d'entreprise / secteur d'activité), les repasse en format tidy (une ligne = une catégorie × zone × année), et vérifie que le résultat fait bien 78 lignes avant de l'écrire — sinon il plante plutôt que de sortir un CSV silencieusement faux. Le fichier propre final, `data/insee_ia_pour_powerbi.csv`, est prêt pour n'importe quel outil BI. Cette même logique de nettoyage est reprise et automatisée (téléchargement + régénération des graphiques sans intervention) dans [automatisation-reporting-insee](https://github.com/ATEYABA-K/automatisation-reporting-insee).
 
 ## Ce que ces chiffres ne disent pas
 
