@@ -1,12 +1,13 @@
 # L'IA en entreprise, mais pas pour tout le monde
 
-Je voulais vérifier un truc : est-ce que les PME rattrapent leur retard sur l'IA, ou est-ce que ça s'aggrave. Les chiffres officiels de l'Insee répondent clairement, et pas dans le sens où je m'y attendais.
+## En bref
+Je voulais vérifier si les PME rattrapent leur retard sur l'IA, ou si l'écart se creuse. Les chiffres officiels de l'Insee répondent clairement — et pas dans le sens où je m'y attendais.
 
 ![Dashboard Looker Studio](dashboard_looker_studio.png)
 
 *[Voir le dashboard interactif](https://datastudio.google.com/reporting/80b607fa-71f1-461c-b5ae-30e91c213f86)*
 
-En 2025, 58 % des entreprises de 250 salariés et plus utilisent une techno d'IA, contre 15 % pour les 10-49 salariés. L'écart n'est pas nouveau, mais ce qui frappe c'est sa trajectoire :
+En 2025, 58 % des entreprises de 250 salariés et plus utilisent une techno d'IA, contre 15 % pour les 10-49 salariés.
 
 | | 2023 | 2024 | 2025 |
 |---|---|---|---|
@@ -15,24 +16,19 @@ En 2025, 58 % des entreprises de 250 salariés et plus utilisent une techno d'IA
 | 250 salariés ou plus | 21 % | 33 % | 58 % |
 | **Écart (250+ vs 10-49)** | 16 pts | 24 pts | **43 pts** |
 
-L'écart a presque triplé en deux ans. Tout le monde adopte l'IA plus vite qu'avant, mais les grandes boîtes accélèrent plus fort — donc l'écart se creuse au lieu de se refermer. Une PME en 2025 est à peu près là où était une grande entreprise fin 2022. Le retard ne se rattrape pas tout seul avec le temps.
+L'écart a presque triplé en deux ans. Tout le monde adopte l'IA plus vite qu'avant, mais les grandes entreprises accélèrent encore plus — l'écart se creuse au lieu de se refermer.
 
 ## D'où viennent les chiffres
-
-[Insee Première n° 2120](https://www.insee.fr/fr/statistiques/9025878), enquête TIC entreprises 2023-2025, entreprises de 10 salariés ou plus en France. Le fichier Excel brut fait 11 onglets, la vraie donnée utile est dans l'onglet "Figure 1" — le reste est du texte de présentation ou des tableaux annexes que je n'ai pas exploités.
+[Insee Première n° 2120](https://www.insee.fr/fr/statistiques/9025878), enquête TIC entreprises 2023-2025.
 
 ## Reproduire
-
 ```bash
 pip install -r requirements.txt
 python3 scripts/clean_data.py
 ```
-Le script sépare les deux blocs du fichier source (taille d'entreprise / secteur d'activité), les repasse en format tidy (une ligne = une catégorie × zone × année), et vérifie que le résultat fait bien 78 lignes avant de l'écrire — sinon il plante plutôt que de sortir un CSV silencieusement faux. Le fichier propre final, `data/insee_ia_pour_powerbi.csv`, est prêt pour n'importe quel outil BI. Cette même logique de nettoyage est reprise et automatisée (téléchargement + régénération des graphiques sans intervention) dans [automatisation-reporting-insee](https://github.com/ATEYABA-K/automatisation-reporting-insee).
+Le script prend le fichier Excel brut de l'Insee, en extrait les chiffres utiles et vérifie qu'il obtient bien le bon nombre de lignes avant de créer le fichier propre (`data/insee_ia_pour_powerbi.csv`), prêt pour un outil de dataviz.
 
 ## Ce que ces chiffres ne disent pas
-
-Ils mesurent "au moins une techno d'IA utilisée", pas l'intensité d'usage — une boîte qui teste ChatGPT une fois compte pareil qu'une boîte avec plusieurs cas d'usage en prod. Et l'enquête exclut les entreprises de moins de 10 salariés, qui sont l'essentiel du tissu PME en France. Le lien de causalité (est-ce vraiment la taille, ou des facteurs corrélés à la taille — secteur, maturité numérique déjà là avant) n'est pas non plus tranché par ces chiffres seuls.
-
-Si je devais pousser plus loin : croiser avec le % de salariés concernés (pas juste % d'entreprises), regarder par secteur plutôt que par taille, ou comparer à d'autres pays européens.
+Ils mesurent "au moins une techno d'IA utilisée", pas l'intensité d'usage. L'enquête exclut aussi les entreprises de moins de 10 salariés. Et on ne sait pas si c'est vraiment la taille de l'entreprise qui explique l'écart, ou d'autres facteurs liés (secteur, maturité numérique déjà présente avant).
 
 Alvin Kouadio
