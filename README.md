@@ -9,12 +9,12 @@ Je voulais vérifier si les PME rattrapent leur retard sur l'IA, ou si l'écart 
 
 En 2025, 58 % des entreprises de 250 salariés et plus utilisent une techno d'IA, contre 15 % pour les 10-49 salariés.
 
-| | 2023 | 2024 | 2025 | Ecart années |
+| | 2023 | 2024 | 2025 | Ecart 2025-2023 |
 |---|---|---|---|---|
 | 10 à 49 salariés | 5 % | 9 % | 15 % |10% |
 | 50 à 249 salariés | 10 % | 15 % | 31 % |21% |
 | 250 salariés ou plus | 21 % | 33 % | 58 % |37% |
-| **Écart (250+ vs 10-49)** | 16 pts | 24 pts | **43 pts** |
+| **Écart (250+ vs 10-49)** | 16 pts | 24 pts | **43 pts** | **26 pts** |
 
 L'écart a presque triplé en deux ans. Tout le monde adopte l'IA plus vite qu'avant, mais les grandes entreprises accélèrent encore plus — l'écart se creuse au lieu de se refermer.
 
