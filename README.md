@@ -1,7 +1,7 @@
 # L'IA en entreprise, mais pas pour tout le monde
 
 ## En bref
-Je voulais vérifier si les PME rattrapent leur retard sur l'IA, ou si l'écart se creuse. Les chiffres officiels de l'Insee répondent clairement — et pas dans le sens où je m'y attendais.
+Je voulais vérifier si les PME rattrapent leur retard sur l'IA, ou si l'écart se creuse. Les chiffres officiels de l'Insee répondent clairement, et pas dans le sens où je m'y attendais.
 
 ![Dashboard Looker Studio](dashboard_looker_studio.png)
 
@@ -16,7 +16,7 @@ En 2025, 58 % des entreprises de 250 salariés et plus utilisent une techno d'IA
 | 250 salariés ou plus | 21 % | 33 % | 58 % |37% |
 | **Écart (250+ vs 10-49)** | 16 pts | 24 pts | **43 pts** | **26 pts** |
 
-L'écart a presque triplé en deux ans. Tout le monde adopte l'IA plus vite qu'avant, mais les grandes entreprises accélèrent encore plus — l'écart se creuse au lieu de se refermer.
+L'écart a presque triplé en deux ans. Tout le monde adopte l'IA plus vite qu'avant, mais les grandes entreprises accélèrent encore plus : l'écart se creuse au lieu de se refermer.
 
 ## D'où viennent les chiffres
 [Insee Première n° 2120](https://www.insee.fr/fr/statistiques/9025878), enquête TIC entreprises 2023-2025.
